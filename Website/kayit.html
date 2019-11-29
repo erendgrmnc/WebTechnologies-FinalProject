@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Project</title>
+    <link rel = "stylesheet" href = "text.css" type = "text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="iletisim.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    function parseURLParams(url) {
+        var queryStart = url.indexOf("?") + 1,
+            queryEnd   = url.indexOf("#") + 1 || url.length + 1,
+            query = url.slice(queryStart, queryEnd - 1),
+            pairs = query.replace(/\+/g, " ").split("&"),
+            parms = {}, i, n, v, nv;
+    
+        if (query === url || query === "") return;
+    
+        for (i = 0; i < pairs.length; i++) {
+            nv = pairs[i].split("=", 2);
+            n = decodeURIComponent(nv[0]);
+            v = decodeURIComponent(nv[1]);
+    
+            if (!parms.hasOwnProperty(n)) parms[n] = [];
+            parms[n].push(nv.length === 2 ? v : null);
+        }
+        return parms;
+    }
+    $("document").ready(function(){
+          var pathname = window.location.href
+       var veriler = parseURLParams(pathname)
+       console.log(veriler)
+    
+      document.getElementById("adi").innerHTML=veriler.adi ;
+      document.getElementById("soyadi").innerHTML=veriler.soyadi ;
+      document.getElementById("email").innerHTML=veriler.email ;
+      document.getElementById("cinsiyet").innerHTML=veriler.cinsiyet ;
+        document.getElementById("mesaj").innerHTML=veriler.mesaj ;
+            document.getElementById("numara").innerHTML=veriler.numara ;
+            document.getElementById("neden").innerHTML=veriler.neden ;
+            document.getElementById("adres").innerHTML=veriler.adres ;
+    });
+    </script>
+        <div class = "index_main_menu"  >
+          <nav class = "navigation_bar">
+              
+                  <div class = "navbar_coll">
+                          <li class = "nav-item">
+                              <a href = "index.html">ANASAYFA</a>
+                          </li>
+                          <li class = "nav-item" ;>
+                              <a class = "nav_cv" href="Özgeçmiş.html">Özgeçmiş</a>
+                          </li>
+                          <li class = nav-item>
+                              <a class = "nav_city" href="Şehir.html">Yaşadığım Şehir</a>
+                          </li>
+                          <li class = "nav-item">
+                              <a class = "nav_culture" href = "Miras.html">Mirasımız</a>
+                          </li>
+                          <li clas="nav-item">
+                              <a class = "nav_form" href = "İletişim.html">İletişim</a>
+                          </li>
+    
+                  </div>
+          </nav>
+          
+      </div>
+</head>
+<body class="com_body">
+  
+    
+    <div class="com">
+    <hr>
+    <h1 class="intro_text">KAYITLI FORM</h1><br>
+    
+    <div class="container-fluid">
+    <div class="form">
+    <form  name="form" action="iletisim.php" onsubmit="return kontrol()" method="get">
+            
+      <table class="table">
+        
+        <tbody>
+          <tr>
+            <th scope="row" class="yazi">Adı</th>
+            <td class="yazi"><p id="adi"></p></td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">Soyadı</th>
+            <td class="yazi"><p id="soyadi"></p></td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">E-mail Adresi</th>
+            <td class="yazi"><p id="email"></p></td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">Telefon Numarası <br> (Zorunlu değil)</th>
+            <td class="yazi"><p id="numara"></p></td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">Cinsiyeti</th>
+            <td class="yazi"><p id="cinsiyet"></p></td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">İletişim Adresi</th>
+            <td class="yazi"><p id="adres"></p></td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">İletişim Nedeni</th>
+            <td class="yazi"><p id="neden"></p></td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">Mesaj</th>
+            <td class="yazi"><p id="mesaj"></p></td>
+
+          </tr>
+          <tr>
+            <td><input class="btn btn-success" type="submit" value="Gönder"></td>
+            <td><input class="btn btn-danger" type="reset" value="Temizle"></td>
+
+          </tr>
+          <tr>
+            <td><a href="İletişim.html"><input class="btn btn-primary"  value="Yeni Form"></a></td>
+          </tr>
+        </tbody>
+      </table>
+
+  </form>
+  </div>
+  </div>
+    </div>
+    
+    <hr>
+    <br><br>
+
+</body>
+</html>

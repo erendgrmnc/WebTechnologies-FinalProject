@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src = "iletisim.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "text.css" type = "text/css">
+
+    <div class = "index_main_menu"  >
+      <nav class = "navigation_bar">
+          
+              <div class = "navbar_coll">
+                      <li class = "nav-item">
+                          <a href = "index.html">ANASAYFA</a>
+                      </li>
+                      <li class = "nav-item" ;>
+                          <a class = "nav_cv" href="Özgeçmiş.html">Özgeçmiş</a>
+                      </li>
+                      <li class = nav-item>
+                          <a class = "nav_city" href="Şehir.html">Yaşadığım Şehir</a>
+                      </li>
+                      <li class = "nav-item">
+                          <a class = "nav_culture" href = "Miras.html">Mirasımız</a>
+                      </li>
+                      <li clas="nav-item">
+                          <a class = "nav_form" href = "İletişim.html">İletişim</a>
+                      </li>
+
+              </div>
+      </nav>
+      
+  </div>
+</head>
+<body>
+    
+    <div class="com">
+    <hr >
+    <h1 class="inro_text">İLETİŞİM FORMU</h1><br>
+    
+    <div class="container-fluid">
+    <div class="com">
+    <form  name="form" action="kayit.html" onsubmit="return kontrol()" method="get">
+            
+      <table class="com_table">
+        
+        <tbody>
+          <tr>
+            <th scope="row" class="yazi">Adı</th>
+            <td class="yazi"><input onkeypress="Harf(event)" type="text" name="adi"></td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">Soyadı</th>
+            <td class="yazi"><input onkeypress="Harf(event)" type="text" name="soyadi"></td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">E-mail Adresi</th>
+            <td class="yazi"><input type="text" name="email"></td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">Telefon Numarası <br> (Zorunlu değil)</th>
+            <td class="yazi"><input onkeypress="Sayi(event)" type="text" name="numara"></td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">Cinsiyeti</th>
+            <td class="yazi"><input type="radio" name="cinsiyet" value="erkek" checked>Erkek
+              <input type="radio" name="cinsiyet" value="kadın">Kadın</td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">İletişim Adresi</th>
+            <td class="yazi"><input type="checkbox" name="adres" value="okul" checked>Okul<br>
+              <input type="checkbox" name="adres" value="is">İş<br>
+              <input type="checkbox" name="adres" value="ozel">Özel</td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">İletişim Nedeni</th>
+            <td class="yazi"><select name="neden">
+              <option value="oneri" selected>Öneri</option>
+              <option value="istek">İstek</option>
+              <option value="sikayet">Şikayet</option>
+          </select></td>
+
+          </tr>
+          <tr>
+            <th scope="row" class="yazi">Mesaj</th>
+            <td class="yazi"><textarea name="mesaj" cols="20" rows="5"></textarea></td>
+
+          </tr>
+          <tr>
+            <td><input class="btn btn-success" type="submit" value="Gönder"></td>
+            <td><input class="btn btn-danger" type="reset" value="Temizle"></td>
+
+          </tr>
+          <tr>
+            <td><a href="iletisim.html"><input class="btn btn-primary"  value="Yeni Form"></a></td>
+          </tr>
+        </tbody>
+      </table>
+
+  </form>
+  </div>
+  </div>
+    </div>
+    
+    <hr>
+    <br><br>
+
+</body>
+</html>

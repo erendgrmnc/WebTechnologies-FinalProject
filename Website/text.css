@@ -1,0 +1,185 @@
+body {
+    background-image: url('../WEB/Resimler/arkaplan.png');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    font-size: 15px;
+    }
+
+
+     nav {
+        background-color: white;
+        margin: 0;
+        overflow: hidden;
+    
+      
+    }
+   li {
+        float: left;
+        list-style:none;
+      }
+      
+      a {
+        display: block;
+        padding: 8px;
+        background-color: white;
+      }
+
+.intro{
+   padding: 90px;
+}
+.intro_text
+{   color: aqua;
+    text-align: center;
+}
+
+.my_text
+{
+    font-size: 30px;
+    font: bolder;
+    text-align: center;
+    color: black;
+}
+
+.line
+{
+    color: aqua;
+    height: 2px;
+    size: 4;
+}
+
+.cv_graph
+{
+color:white;
+width: 350px;
+margin:auto;
+}
+
+.city_body{
+    background-image: url('../WEB/Resimler/istanbul.jpg');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    font-size: 15px;
+
+}
+
+.city_head{
+    color: aquamarine;
+    font:bolder;
+    text-align: center;
+
+}
+.city_head2{
+    color:silver;
+    font:italic;
+    text-align: center;
+    
+}
+.city_text{
+    color:white;
+    text-align: center;
+    margin:auto;
+    background-color: teal;   
+}
+
+.imp_place_palace
+{
+    background-color: chocolate;
+    max-width: 700px;
+    max-height: 1000px;
+}
+.imp_places1_head
+{
+    
+    text-align: center;
+    color:aqua;
+    
+    font-size: 30px;
+}
+
+
+.palace_text
+{
+    text-align: left;
+    max-width: 700px;;
+    
+}
+
+.imp_places2_head{
+    
+    text-align: center;
+    color:aqua;
+    font-size: 30px;
+    
+}
+
+.imp_place_tower
+{   
+    background-color: chocolate;
+    max-width: 700px;
+    max-height: 1000px;
+    position: absolute;
+    right: 0px;
+    margin-top:auto;
+    top:290px;
+    
+}
+
+.com
+{
+    max-width: 2000px;
+    max-height: 2000px;
+    margin:auto;
+  
+}
+
+._text
+{   font-size: 20px;
+    color: silver;
+    text-align: center;
+    
+}
+
+.miras-body
+{
+    background-image: url("../WEB/Resimler/stad.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+.miras{
+    margin: auto;
+}
+.miras_head
+{
+    text-align: center;
+    font: 30px;
+    color: red;
+    background-color: yellow;
+
+}
+
+.miras_p
+{
+    text-align: center;
+    font :16px;
+    background-color: yellow;
+    color: red;
+}
+.com_body
+{
+    background-image: url('../WEB/Resimler/arkaplan.png');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    font-size: 15px;
+}
